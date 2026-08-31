@@ -8,7 +8,11 @@
   <body>
     <h1>Stargazers log</h1>
     <p>A log of the repositories I've starred.</p>
-    <ul id="starred"></ul>
+    <section aria-labelledby="starred-heading">
+      <h2 id="starred-heading">Starred repositories</h2>
+      <p id="starred-empty" class="empty">Loading…</p>
+      <ul id="starred" class="starred-list" aria-live="polite"></ul>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
